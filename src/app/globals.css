@@ -2,89 +2,50 @@
 @tailwind components;
 @tailwind utilities;
 
-/* :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: 0 0% 3.9%;
-    --foreground: 0 0% 98%;
-    --card: 0 0% 3.9%;
-    --card-foreground: 0 0% 98%;
-    --popover: 0 0% 3.9%;
-    --popover-foreground: 0 0% 98%;
-    --primary: 0 0% 98%;
-    --primary-foreground: 0 0% 9%;
-    --secondary: 0 0% 14.9%;
-    --secondary-foreground: 0 0% 98%;
-    --muted: 0 0% 14.9%;
-    --muted-foreground: 0 0% 63.9%;
-    --accent: 0 0% 14.9%;
-    --accent-foreground: 0 0% 98%;
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 0 0% 14.9%;
-    --input: 0 0% 14.9%;
-    --ring: 0 0% 83.1%;
-  }
-} */
-
-/* body { */
-/* color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-} */
+/* TODO: update color pallete. Using this one kind of https://colorhunt.co/palette/2d24245c3d2eb85c38e0c097 */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 0 0% 3.9%;
-    --card: 0 0% 100%;
-    --card-foreground: 0 0% 3.9%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 3.9%;
-    --primary: 0 0% 9%;
-    --primary-foreground: 0 0% 98%;
-    --secondary: 0 0% 96.1%;
-    --secondary-foreground: 0 0% 9%;
-    --muted: 0 0% 96.1%;
-    --muted-foreground: 0 0% 45.1%;
-    --accent: 0 0% 96.1%;
-    --accent-foreground: 0 0% 9%;
+    --background: 30 0% 98%; /* fafafa */
+    --foreground: 0 11% 16%; /* 2D2424 */
+    --card: 30 0% 98%; /* fafafa */
+    --card-foreground: 0 11% 16%; /* 2D2424 */
+    --popover: 30 0% 98%; /* fafafa */
+    --popover-foreground: 0 11% 16%; /* 2D2424 */
+    --primary: 40 50% 50%; /* ??? */
+    --primary-foreground: 30 0% 98%; /* fafafa */
+    --secondary: 30 0% 96%; /* fafafa */
+    --secondary-foreground: 0 11% 16%; /* 2D2424 */
+    --muted: 30 0% 96%; /* fafafa */
+    --muted-foreground: 33.3 15% 45%; /* ??? */
+    --accent: 30 0% 96%; /* fafafa */
+    --accent-foreground: 0 11% 16%; /* 2D2424 */
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 0 0% 89.8%;
-    --input: 0 0% 89.8%;
-    --ring: 0 0% 3.9%;
+    --destructive-foreground: 30 0% 96%; /* fafafa */
+    --border: 30 32% 89.8%; /* ?? */
+    --input: 30 32% 89.8%; /* ?? */
+    --ring: 40 50% 50%; /* ??? */
     --radius: 0.5rem;
   }
   .dark {
-    --background: 0 0% 3.9%;
-    --foreground: 0 0% 98%;
-    --card: 0 0% 3.9%;
-    --card-foreground: 0 0% 98%;
-    --popover: 0 0% 3.9%;
-    --popover-foreground: 0 0% 98%;
-    --primary: 0 0% 98%;
-    --primary-foreground: 0 0% 9%;
-    --secondary: 0 0% 14.9%;
-    --secondary-foreground: 0 0% 98%;
-    --muted: 0 0% 14.9%;
-    --muted-foreground: 0 0% 63.9%;
-    --accent: 0 0% 14.9%;
-    --accent-foreground: 0 0% 98%;
+    --background: 0 11% 16%; /* 2D2424 */
+    --foreground: 30 0% 98%; /* fafafa */
+    --card: 0 11% 16%; /* 2D2424 */
+    --card-foreground: 30 0% 98%; /* fafafa */
+    --popover: 0 11% 16%; /* 2D2424 */
+    --popover-foreground: 30 0% 98%; /* fafafa */
+    --primary: 33.1 18.5% 69.2%; /* bfb2a2 */
+    --primary-foreground: 0 9.8% 18%; /* 322929 */
+    --secondary: 33.1 18.5% 69.2%; /* bfb2a2 */
+    --secondary-foreground: 30 0% 98%; /* fafafa */
+    --muted: 33.1 18.5% 69.2%; /* bfb2a2 */
+    --muted-foreground: 33.3 52.9% 86.7%; /* efdfcb */
+    --accent: 33.1 18.5% 69.2%; /* bfb2a2 */
+    --accent-foreground: 30 0% 98%; /* fafafa */
     --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 0 0% 14.9%;
-    --input: 0 0% 14.9%;
+    --destructive-foreground: 30 0% 98%; /* fafafa */
+    --border: 33.1 18.5% 69.2%; /* bfb2a2 */
+    --input: 33.1 18.5% 69.2%; /* bfb2a2 */
     --ring: 0 0% 83.1%;
   }
 }
