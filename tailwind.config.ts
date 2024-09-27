@@ -49,7 +49,12 @@ const config: Config = {
   				'3': 'hsl(var(--chart-3))',
   				'4': 'hsl(var(--chart-4))',
   				'5': 'hsl(var(--chart-5))'
-  			}
+  			},
+				cardhover: {
+					background: 'hsl(var(--cardhover-background))',
+					border: 'hsl(var(--cardhover-border))',
+					shadow: 'hsl(var(--cardhover-shadow))'
+				}
   		},
   		borderRadius: {
   			lg: 'var(--radius)',

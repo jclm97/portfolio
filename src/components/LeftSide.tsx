@@ -17,7 +17,9 @@ const LeftSide = () => {
         </Avatar>
         <h1 className="text-4xl">Howdy, Samir here</h1>
         <h2 className="text-xl">Software Engineer</h2>
-        <p className="text-base">I like to build autonomous systems</p>
+        <p className="text-lg text-muted-foreground">
+          I like to build autonomous systems
+        </p>
       </div>
       <Menu></Menu>
       <Contacts></Contacts>

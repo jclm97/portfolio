@@ -1,8 +1,10 @@
 import LeftSide from "@/components/LeftSide";
 import AboutMe from "@/components/AboutMe";
+import Education from "@/components/Education";
 import Experience from "@/components/Experience";
 import Projects from "@/components/Projects";
 import Footnote from "@/components/Footnote";
+import PageDetailsFile from "@p/configs/page_details.json";
 
 // main = display: flex, flex-direction: column, min-height: 100vh, align-items: center, padding-top and bottom: 24px,
 // padding-left and right: 6px, @media (min-width: 1024px){padding-left and right: 24px}
@@ -18,6 +20,7 @@ export default function Home() {
         <LeftSide></LeftSide>
         <div className="flex flex-col pt-6 lg:pt-0 lg:w-1/2 gap-8">
           <AboutMe></AboutMe>
+          <Education EducationHistory={PageDetailsFile.education}></Education>
           <Experience></Experience>
           <Projects></Projects>
           <Footnote></Footnote>
