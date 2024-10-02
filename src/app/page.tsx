@@ -1,5 +1,5 @@
 import LeftSide from "@/components/LeftSide";
-import AboutMe from "@/components/AboutMe";
+import About from "@/components/About";
 import Education from "@/components/Education";
 import Experience from "@/components/Experience";
 import Projects from "@/components/Projects";
@@ -15,11 +15,11 @@ import PageDetailsFile from "@p/configs/page_details.json";
 
 export default function Home() {
   return (
-    <main className="flex flex-col min-h-screen items-center px-6 py-6 lg:px-24 lg:py-24">
+    <main className="flex flex-col min-h-screen items-center px-6 py-6 lg:px-24">
       <div className="z-5 w-full max-w-5xl font-sans text-sm flex flex-col lg:flex-row justify-between">
         <LeftSide></LeftSide>
-        <div className="flex flex-col pt-6 lg:pt-0 lg:w-1/2 gap-8">
-          <AboutMe></AboutMe>
+        <div className="flex flex-col pt-6 lg:pt-24 lg:w-1/2 gap-8">
+          <About></About>
           <Education EducationHistory={PageDetailsFile.education}></Education>
           <Experience></Experience>
           <Projects></Projects>

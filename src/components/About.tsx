@@ -1,7 +1,7 @@
-const AboutMe = () => {
+const About = () => {
   return (
-    <section id="about-me">
-      <div className="flex flex-col gap-5">
+    <section data-section id="about">
+      <div className="flex flex-col gap-5 text-muted-foreground">
         <p className="">
           From my educational background, I designed, manufactured, and analyzed
           mechanical systems. During my journey, I stumbled across the field of
@@ -14,7 +14,7 @@ const AboutMe = () => {
           have traversed through land, air, and sea. Most of my contributions
           and expertise is in GNC (Guidance, Navigation, and Control). Lately,
           my focus has been more upstream where I get to be more involved with
-          mapping and computer vision, and I hope to stay in this realm.
+          perception and mapping, and I hope to stay in this realm.
         </p>
         <p className="">
           I've been blessed to work with amazing people who I learned a lot from
@@ -27,4 +27,4 @@ const AboutMe = () => {
   );
 };
 
-export default AboutMe;
+export default About;

@@ -21,7 +21,7 @@ type EducationProps = {
 
 const Education: FC<EducationProps> = ({ EducationHistory }) => {
   return (
-    <section id="education">
+    <section id="education" className="">
       {EducationHistory.map((item, index) => (
         <Card
           key={index}
