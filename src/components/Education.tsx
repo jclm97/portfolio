@@ -21,11 +21,11 @@ type EducationProps = {
 
 const Education: FC<EducationProps> = ({ EducationDetails }) => {
   return (
-    <section data-section id="education" className="">
+    <section id="education" className="">
       {EducationDetails.map((item, index) => (
         <Card
           key={index}
-          className="flex flex-col w-full min-h-fit gap-0 mb-4 border-transparent lg:px-2 lg:py-1 lg:gap-2 hover:border-cardhover-border hover:bg-cardhover-background hover:shadow-[inset_0_1px_0_0] hover:shadow-cardhover-shadow hover:drop-shadow-lg"
+          className="flex flex-col w-full min-h-fit gap-0 mb-4 border-transparent lg:px-2 lg:py-2 lg:gap-2 hover:border-cardhover-border hover:bg-cardhover-background hover:shadow-[inset_0_1px_0_0] hover:shadow-cardhover-shadow hover:drop-shadow-lg"
         >
           <CardHeader className="h-full w-full p-0">
             <CardTitle className="text-base text-muted-foreground whitespace-nowrap">
