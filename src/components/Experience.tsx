@@ -8,7 +8,12 @@ import {
 } from "@/components/ui/card";
 
 const Experience = () => {
-  return <section id="experience"> Experience WIP</section>;
+  return (
+    <section id="experience" className="h-dvh">
+      {" "}
+      Experience WIP
+    </section>
+  );
 };
 
 export default Experience;
