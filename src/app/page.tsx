@@ -20,7 +20,7 @@ export default function Home() {
         <LeftSide></LeftSide>
         <div className="flex flex-col pt-6 lg:pt-24 lg:w-1/2 gap-8">
           <About></About>
-          <Education EducationHistory={PageDetailsFile.education}></Education>
+          <Education EducationDetails={PageDetailsFile.education}></Education>
           <Experience></Experience>
           <Projects></Projects>
           <Footnote></Footnote>
