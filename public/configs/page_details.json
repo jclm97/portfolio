@@ -1,4 +1,11 @@
 {
+  "menu": [
+    {"section": "about", "href": "about"},
+    {"section": "education", "href": "education"},
+    {"section": "experience", "href": "experience"},
+    {"section": "projects", "href": "projects"}
+  ],
+
   "education": [  {
     "subject": "Mechanical Engineering",
     "degree": "MS",
