@@ -30,10 +30,14 @@ function MenuItem(props: MenuDetail) {
 
 const Menu: FC<MenuProps> = ({ MenuDetails }) => {
   // Array of MenuItem Elements
-  const menu = MenuDetails.map((item) => {
+  const menu = MenuDetails.map((item, index) => {
     const ref = "#" + item.href;
     return (
-      <MenuItem section={item.section.toUpperCase()} href={ref}></MenuItem>
+      <MenuItem
+        key={index}
+        section={item.section.toUpperCase()}
+        href={ref}
+      ></MenuItem>
     );
   });
 
