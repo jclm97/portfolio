@@ -34,13 +34,13 @@ function ExperienceItem(props: ExperienceDetail) {
         className="flex flex-col lg:flex-row w-full min-h-fit gap-0 mb-4 border-transparent px-2 lg:gap-3
     hover:border-cardhover-border hover:bg-cardhover-background hover:shadow-[inset_0_1px_0_0] hover:shadow-cardhover-shadow hover:drop-shadow-lg"
       >
-        <CardHeader className="h-full w-full p-1">
+        <CardHeader className="h-full w-1/2 p-0 lg:p-1">
           <CardTitle className="whitespace-normal">
             {props.startDate} - {props.endDate}
           </CardTitle>
         </CardHeader>
 
-        <CardContent className="flex flex-col p-0">
+        <CardContent className="flex flex-col w-full p-0">
           <p className="text-foreground text-base">
             {props.position} • {props.company}
           </p>
@@ -81,7 +81,7 @@ const Experience: FC<ExperienceProps> = ({ ExperienceDetails }) => {
   });
 
   return (
-    <section id="experience" className="h-dvh">
+    <section id="experience" className="">
       {experience}
     </section>
   );
