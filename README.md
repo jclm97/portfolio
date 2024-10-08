@@ -42,5 +42,5 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 - [] finalize color themese for light
 - [] experience description and skills
 - [] project description and skills
-- [] remove education section?
+- [x] remove education section?
 - [] mouse spotlight effect
