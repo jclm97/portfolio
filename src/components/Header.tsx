@@ -10,10 +10,6 @@ type HeaderDetail = {
   summary: string;
 };
 
-type HeaderProps = {
-  headerDetail: HeaderDetail;
-};
-
 const Header = () => {
   const headerDetail: HeaderDetail = PageDetailsFile.header;
 
