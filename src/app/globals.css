@@ -12,7 +12,7 @@
     --card-foreground: 0 11% 16%; /* 2D2424 */
     --popover: 30 0% 98%; /* fafafa */
     --popover-foreground: 0 11% 16%; /* 2D2424 */
-    --primary: 40 50% 50%; /* ??? */
+    --primary: 16.9 53.3% 47.1%; /* b85c38 button and badge filled color */
     --primary-foreground: 30 0% 98%; /* fafafa */
     --secondary: 30 0% 96%; /* fafafa */
     --secondary-foreground: 0 11% 16%; /* 2D2424 */
@@ -27,9 +27,9 @@
     --ring: 40 50% 50%; /* ??? */
     --radius: 0.5rem;
 
-    --cardhover-background: 0 0% 0%;
-    --cardhover-border: 0 0% 0%;
-    --cardhover-shadow: 0 0% 0%;
+    --cardhover-background: 240 4.9% 83.9%;
+    --cardhover-border: 240 10% 3.9%;
+    --cardhover-shadow: 240 3.7% 15.9%;
   }
   .dark {
     --background: 0 11% 16%; /* 2D2424 */
@@ -38,7 +38,7 @@
     --card-foreground: 30 0% 98%; /* fafafa */
     --popover: 0 11% 16%; /* 2D2424 */
     --popover-foreground: 30 0% 98%; /* fafafa */
-    --primary: 33.1 18.5% 69.2%; /* bfb2a2 */
+    --primary: 16.9 53.3% 47.1%; /* b85c38 */
     --primary-foreground: 0 9.8% 18%; /* 322929 */
     --secondary: 33.1 18.5% 69.2%; /* bfb2a2 */
     --secondary-foreground: 30 0% 98%; /* fafafa */

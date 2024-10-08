@@ -41,5 +41,27 @@
     "description": "Here is an example written description which is a summary of what was done in this position. Is this enough words? Who knows? I have to meet a word count somehow.",
     "skills": ["C++", "Python", "TODO"],
     "link": "https://cast.tamu.edu/"
+    
+  },  { 
+    "position": "Controls Team Lead",
+    "company": "SAE AutoDrive Challenge",
+    "startDate": "Aug 2017",
+    "endDate": "May 2018",
+    "description": "Here is an example written description which is a summary of what was done in this position. Is this enough words? Who knows? I have to meet a word count somehow.",
+    "skills": ["C++", "Python", "TODO"],
+    "link": "https://tees.tamu.edu/news/2018/05/texas-am-engineering-autodrive-challenge-team-takes-second-overall-in-first-competition-milestone.html"
+  }],
+  "projects":  [ { 
+    "name": "GPT - The Office",
+    "image": "https://raw.githubusercontent.com/shassen14/gpt_the_office/refs/heads/main/docs/main/generation.gif",
+    "description": "Here is an example written description which is a summary of what was done in this position.",
+    "skills": ["Python", "Pytorch", "Numpy", "LLM"],
+    "link": "https://github.com/shassen14/gpt_the_office"
+  }, { 
+    "name": "Rust Robotics",
+    "image":"https://raw.githubusercontent.com/shassen14/rust_robotics_media/refs/heads/main/models/n_joint_robotic_arm_2d.gif",
+    "description": "Here is an example written description which is a summary of what was done in this position.",
+    "skills": ["Rust", "More skills TBD"],
+    "link": "https://github.com/shassen14/rust_robotics"
   }]
 }

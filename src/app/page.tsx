@@ -24,7 +24,7 @@ export default function Home() {
           <Experience
             ExperienceDetails={PageDetailsFile.experience}
           ></Experience>
-          <Projects></Projects>
+          <Projects ProjectDetails={PageDetailsFile.projects}></Projects>
           <Footnote></Footnote>
         </div>
       </div>

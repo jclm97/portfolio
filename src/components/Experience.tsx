@@ -26,12 +26,10 @@ type ExperienceProps = {
 
 function ExperienceItem(props: ExperienceDetail) {
   return (
-    // TODO need to mess with the css to make sure texts are consistent. It is inconsistent depending on how many words are in them
-    // card header, content, description, etc.
     // TODO need to work on the hover border/shadow
     <a href={props.link} target="_blank" rel="noopener noreferrer">
       <Card
-        className="flex flex-col lg:flex-row w-full min-h-fit gap-0 mb-4 border-transparent px-2 lg:gap-3
+        className="flex flex-col lg:flex-row w-full min-h-fit border-transparent gap-0 mb-4 px-2 lg:gap-3
     hover:border-cardhover-border hover:bg-cardhover-background hover:shadow-[inset_0_1px_0_0] hover:shadow-cardhover-shadow hover:drop-shadow-lg"
       >
         <CardHeader className="h-full w-1/2 p-0 lg:p-1">
@@ -52,7 +50,7 @@ function ExperienceItem(props: ExperienceDetail) {
           <CardDescription className="py-2 text-muted-foreground">
             {props.description}
           </CardDescription>
-          <CardFooter className="p-0 flex flex-wrap gap-2">
+          <CardFooter className="px-0 pb-2 flex flex-wrap gap-2">
             {props.skills.map((skill, index) => (
               <Badge key={index}>{skill}</Badge>
             ))}
