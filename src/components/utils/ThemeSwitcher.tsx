@@ -4,7 +4,6 @@
 import { Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
 import { Switch } from "@/components/ui/switch";
-
 import { useState } from "react";
 
 const chooseTheme = (isSwitchOn: boolean) => {

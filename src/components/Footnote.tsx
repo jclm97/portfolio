@@ -9,7 +9,7 @@ const Footnote = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Brittany Chiang's website
+          Brittany Chiang&apos;s website
         </a>
         . To build this website, I used Next.js, Tailwind CSS, and Shadcn.
       </p>
