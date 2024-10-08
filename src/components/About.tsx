@@ -1,6 +1,6 @@
 const About = () => {
   return (
-    <section data-section id="about">
+    <section id="about">
       <div className="flex flex-col gap-5 text-muted-foreground">
         <p className="">
           From my educational background, I designed, manufactured, and analyzed

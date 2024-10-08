@@ -11,7 +11,7 @@ const Footnote = () => {
         >
           Brittany Chiang's website
         </a>
-        .
+        . To build this website, I used Next.js, Tailwind CSS, and Shadcn.
       </p>
     </div>
   );

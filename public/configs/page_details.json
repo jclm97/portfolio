@@ -1,8 +1,8 @@
 {
   "menu": [
     {"section": "about", "href": "about"},
-    {"section": "education", "href": "education"},
     {"section": "experience", "href": "experience"},
+    {"section": "education", "href": "education"},
     {"section": "projects", "href": "projects"}
   ],
   "education": [  {
