@@ -14,21 +14,21 @@ const Content = () => {
     } else if (item.section === "education") {
       return (
         <Education
-          EducationDetails={PageDetailsFile.education}
+          educationDetails={PageDetailsFile.education}
           key={index}
         ></Education>
       );
     } else if (item.section === "experience") {
       return (
         <Experience
-          ExperienceDetails={PageDetailsFile.experience}
+          experienceDetails={PageDetailsFile.experience}
           key={index}
         ></Experience>
       );
     } else if (item.section === "projects") {
       return (
         <Projects
-          ProjectDetails={PageDetailsFile.projects}
+          projectDetails={PageDetailsFile.projects}
           key={index}
         ></Projects>
       );

@@ -21,7 +21,7 @@ type ExperienceDetail = {
 };
 
 type ExperienceProps = {
-  ExperienceDetails: ExperienceDetail[];
+  experienceDetails: ExperienceDetail[];
 };
 
 function ExperienceItem(props: ExperienceDetail) {
@@ -61,8 +61,8 @@ function ExperienceItem(props: ExperienceDetail) {
   );
 }
 
-const Experience: FC<ExperienceProps> = ({ ExperienceDetails }) => {
-  const experience = ExperienceDetails.map((item, index) => {
+const Experience: FC<ExperienceProps> = ({ experienceDetails }) => {
+  const experience = experienceDetails.map((item, index) => {
     return (
       <ExperienceItem
         key={index}

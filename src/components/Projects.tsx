@@ -19,7 +19,7 @@ type ProjectDetail = {
 };
 
 type ProjectProps = {
-  ProjectDetails: ProjectDetail[];
+  projectDetails: ProjectDetail[];
 };
 
 function ProjectItem(props: ProjectDetail) {
@@ -54,8 +54,8 @@ function ProjectItem(props: ProjectDetail) {
   );
 }
 
-const Projects: FC<ProjectProps> = ({ ProjectDetails }) => {
-  const projects = ProjectDetails.map((item, index) => {
+const Projects: FC<ProjectProps> = ({ projectDetails }) => {
+  const projects = projectDetails.map((item, index) => {
     return (
       <ProjectItem
         key={index}

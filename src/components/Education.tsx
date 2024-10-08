@@ -16,13 +16,13 @@ type EducationDetail = {
 };
 
 type EducationProps = {
-  EducationDetails: EducationDetail[];
+  educationDetails: EducationDetail[];
 };
 
-const Education: FC<EducationProps> = ({ EducationDetails }) => {
+const Education: FC<EducationProps> = ({ educationDetails }) => {
   return (
     <section id="education" className="">
-      {EducationDetails.map((item, index) => (
+      {educationDetails.map((item, index) => (
         <Card
           key={index}
           className="flex flex-col w-full min-h-fit gap-0 mb-4 border-transparent px-2 lg:py-2 lg:gap-2 hover:border-cardhover-border hover:bg-cardhover-background hover:shadow-[inset_0_1px_0_0] hover:shadow-cardhover-shadow hover:drop-shadow-lg"
