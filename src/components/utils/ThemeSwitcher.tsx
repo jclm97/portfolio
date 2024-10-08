@@ -6,7 +6,7 @@ import { useTheme } from "next-themes";
 import { Switch } from "@/components/ui/switch";
 import { useState } from "react";
 
-const chooseTheme = (isSwitchOn: boolean) => {
+const ChooseTheme = (isSwitchOn: boolean) => {
   const { setTheme } = useTheme();
 
   if (isSwitchOn) {
@@ -24,7 +24,7 @@ const ThemeSwitcher = () => {
   return (
     <div className="flex flex-row gap-3 transition-all">
       <Switch checked={isChecked} onCheckedChange={setChecked}></Switch>
-      {chooseTheme(isChecked)}
+      {ChooseTheme(isChecked)}
     </div>
   );
 };
