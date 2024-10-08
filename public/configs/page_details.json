@@ -1,4 +1,11 @@
 {
+  "header": {
+    "image": "images/profile.jpg",
+    "introduction": "Howdy, Samir here",
+    "position": "Software Engineer",
+    "summary": "I like to build autonomous systems"
+  },
+
   "menu": [
     {"section": "about", "href": "about"},
     {"section": "experience", "href": "experience"},

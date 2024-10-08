@@ -35,6 +35,7 @@ function ProjectItem(props: ProjectDetail) {
             alt={props.name + " picture"}
             width={1920}
             height={1080}
+            unoptimized
             className="whitespace-normal rounded-[0.5rem]"
           />
         </CardHeader>
