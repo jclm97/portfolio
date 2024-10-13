@@ -9,6 +9,11 @@ import {
 import { Badge } from "@/components/ui/badge";
 import { FC } from "react";
 
+// TODO There is space on the bottom of this section that adds onto the gap to the section below.
+// This sucks because there is inconsistency spacing between sections.
+// there is problem with doing the function and mapping with not allowing gaps, so margins were
+// used to have spacing between card but now there is problem with spacing between sections
+
 type ExperienceDetail = {
   position: string;
   prevPositions?: string[];
@@ -29,15 +34,14 @@ function ExperienceItem(props: ExperienceDetail) {
     // TODO need to work on the hover border/shadow
     <a href={props.link} target="_blank" rel="noopener noreferrer">
       <Card
-        className="flex flex-col lg:flex-row w-full min-h-fit border-transparent gap-0 mb-4 px-2 lg:gap-3
+        className="flex flex-col lg:flex-row w-full min-h-fit border-transparent gap-0 mb-0 lg:px-2 lg:py-2 
     hover:border-cardhover-border hover:bg-cardhover-background hover:shadow-[inset_0_1px_0_0] hover:shadow-cardhover-shadow hover:drop-shadow-lg"
       >
-        <CardHeader className="h-full w-1/2 p-0 lg:p-1">
+        <CardHeader className="h-full w-1/2 p-0 lg:py-1">
           <CardTitle className="whitespace-normal">
             {props.startDate} - {props.endDate}
           </CardTitle>
         </CardHeader>
-
         <CardContent className="flex flex-col w-full p-0">
           <p className="text-foreground text-base">
             {props.position} • {props.company}
@@ -79,7 +83,10 @@ const Experience: FC<ExperienceProps> = ({ experienceDetails }) => {
   });
 
   return (
-    <section id="experience" className="">
+    <section id="experience" className="flex flex-col gap-3 mb-0">
+      <div className="lg:hidden font-bold uppercase text-base text-foreground pb-3">
+        Experience
+      </div>
       {experience}
     </section>
   );

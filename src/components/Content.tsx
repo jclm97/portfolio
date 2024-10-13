@@ -36,7 +36,7 @@ const Content = () => {
   });
 
   return (
-    <section className="flex flex-col gap-8">
+    <section className="flex flex-col gap-6">
       {content}
       <Footnote></Footnote>
     </section>

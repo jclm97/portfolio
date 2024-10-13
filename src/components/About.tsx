@@ -1,13 +1,16 @@
 const About = () => {
   return (
-    <section id="about">
-      <div className="flex flex-col gap-5 text-muted-foreground">
+    <section id="about" className="flex flex-col gap-3 lg:px-3">
+      <div className="lg:hidden font-bold text-base uppercase text-foreground">
+        About
+      </div>
+      <div className="flex flex-col gap-5 text-base text-muted-foreground">
         <p className="">
           From my educational background, I designed, manufactured, and analyzed
           mechanical systems. During my journey, I stumbled across the field of
-          robotics. At first, I thought it was cool to design and build the
-          physical hardware (I still do), but what really peaked my interest was
-          the software behind the autonomous behaviors.
+          robotics. At first, I thought it was cool to build the physical
+          hardware (I still do), but what really peaked my interest was the
+          software behind the autonomous behaviors.
         </p>
         <p className="">
           This interest has led me to develop autonomy software for robots that

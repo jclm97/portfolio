@@ -28,7 +28,7 @@ function ProjectItem(props: ProjectDetail) {
         className="flex flex-row w-full min-h-fit border-transparent 
     hover:border-cardhover-border hover:bg-cardhover-background hover:shadow-[inset_0_1px_0_0] hover:shadow-cardhover-shadow hover:drop-shadow-lg"
       >
-        <CardHeader className="w-1/2 p-3">
+        <CardHeader className="w-1/2 p-0 lg:p-3">
           <Image
             src={props.image}
             alt={props.name + " picture"}
@@ -38,12 +38,12 @@ function ProjectItem(props: ProjectDetail) {
             className="whitespace-normal rounded-[0.5rem]"
           />
         </CardHeader>
-        <CardContent className="flex flex-col pt-2 w-full ">
+        <CardContent className="flex flex-col pt-2 w-full">
           <p className="text-primary font-bold">{props.name} </p>
           <CardDescription className="py-3 text-muted-foreground">
             {props.description}
           </CardDescription>
-          <CardFooter className="p-0 flex flex-wrap gap-2">
+          <CardFooter className="flex flex-wrap p-0 gap-2">
             {props.skills.map((skill, index) => (
               <Badge key={index}>{skill}</Badge>
             ))}
@@ -68,7 +68,10 @@ const Projects: FC<ProjectProps> = ({ projectDetails }) => {
     );
   });
   return (
-    <section id="projects" className="">
+    <section id="projects" className="flex flex-col gap-3 mb-0">
+      <div className="lg:hidden font-bold uppercase text-base text-foreground ">
+        Projects
+      </div>
       {projects}
     </section>
   );
