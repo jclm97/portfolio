@@ -14,6 +14,8 @@ import { FC } from "react";
 // there is problem with doing the function and mapping with not allowing gaps, so margins were
 // used to have spacing between card but now there is problem with spacing between sections
 
+// TODO for card, can i get negative inset working? to make the card hover bigger easily
+
 type ExperienceDetail = {
   position: string;
   prevPositions?: string[];
@@ -34,7 +36,7 @@ function ExperienceItem(props: ExperienceDetail) {
     // TODO need to work on the hover border/shadow
     <a href={props.link} target="_blank" rel="noopener noreferrer">
       <Card
-        className="flex flex-col lg:flex-row w-full min-h-fit border-transparent gap-0 mb-0 lg:px-2 lg:py-2 
+        className="flex flex-col lg:flex-row w-full min-h-fit border-transparent gap-0 mb-0 lg:px-2 lg:py-2
     hover:border-cardhover-border hover:bg-cardhover-background hover:shadow-[inset_0_1px_0_0] hover:shadow-cardhover-shadow hover:drop-shadow-lg"
       >
         <CardHeader className="h-full w-1/2 p-0 lg:py-1">
