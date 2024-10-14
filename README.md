@@ -37,7 +37,8 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 # TODO List
 
-- [] add section titles for each section only for mobile or not "large" monitors
+- [x] add section titles for each section only for mobile or not "large" monitors
+- [] for large monitors, have the menu items highlighted when scrolling to that section
 - [] finalize color themese for dark
 - [] finalize color themese for light
 - [] experience description and skills
