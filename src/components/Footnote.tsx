@@ -1,6 +1,6 @@
 const Footnote = () => {
   return (
-    <div id="footnote" className="flex mt-10">
+    <div id="footnote" className="flex mt-10 mb-16">
       <p className="text-muted-foreground">
         Inspired by{" "}
         <a

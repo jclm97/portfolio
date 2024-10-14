@@ -39,7 +39,7 @@ const Education: FC<EducationProps> = ({ educationDetails }) => {
     );
   });
   return (
-    <section id="education" className="">
+    <section id="education" className="flex flex-col gap-3 mb-16 lg:mb-36">
       <div className="lg:hidden font-bold uppercase text-base text-foreground pb-3">
         Education
       </div>

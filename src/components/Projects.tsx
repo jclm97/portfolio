@@ -68,7 +68,7 @@ const Projects: FC<ProjectProps> = ({ projectDetails }) => {
     );
   });
   return (
-    <section id="projects" className="flex flex-col gap-3 mb-0">
+    <section id="projects" className="flex flex-col gap-3 mb-16 lg:mb-36">
       <div className="lg:hidden font-bold uppercase text-base text-foreground ">
         Projects
       </div>

@@ -1,6 +1,6 @@
 const About = () => {
   return (
-    <section id="about" className="flex flex-col gap-3 lg:px-3">
+    <section id="about" className="flex flex-col gap-3 lg:px-3 mb-16 lg:mb-36">
       <div className="lg:hidden font-bold text-base uppercase text-foreground">
         About
       </div>
