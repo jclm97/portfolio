@@ -3,6 +3,8 @@ import { useState, useEffect } from "react";
 import { FC } from "react";
 
 // TODO: Change name to Navigation?
+// Currently only works without education. Education section is too small and messes
+// with the view intersection
 
 type MenuDetail = {
   isActive: boolean;
@@ -49,8 +51,6 @@ const useSectionVisibility = (sectionIds: string[]): string => {
         entries.map((entry) => {
           if (entry.isIntersecting) {
             setVisibility(entry.target.id);
-            // TODO: Delete log
-            console.log("visibility: " + entry.target.id);
           }
         });
       },
@@ -77,8 +77,6 @@ const Menu: FC<MenuProps> = ({ MenuDetails }) => {
   const activeSection = useSectionVisibility(
     MenuDetails.map((item) => item.section.toLowerCase())
   );
-  // TODO: delete log
-  console.log("activeSection: " + activeSection);
 
   // list of each jsx menu item element to render
   const menu = MenuDetails.map((item, index) => (
