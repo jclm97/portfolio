@@ -1,26 +1,37 @@
+"use client";
+import { useState, useEffect } from "react";
 import { FC } from "react";
 
 // TODO: Change name to Navigation?
 
 type MenuDetail = {
+  isActive: boolean;
   section: string;
-  href: string;
 };
 
 type MenuProps = {
   MenuDetails: MenuDetail[];
 };
 
+// Menu item will be highlighted whenever mouse hovers or when the user is viewing the section
 function MenuItem(props: MenuDetail) {
+  const href = "#" + props.section.toLowerCase();
+  // first div is the line, second div is the section
   return (
-    <a href={props.href} className="flex flex-row py-3 items-center group">
+    <a href={href} className="flex flex-row py-3 items-center group">
       <div
         className={
-          "w-8 h-0.5 bg-foreground mr-4 transition-all group-hover:w-16 group-hover:bg-foreground"
+          props.isActive
+            ? "w-16 h-0.5 mr-4 transition-all group-hover:w-16 bg-foreground group-hover:bg-foreground"
+            : "w-8 h-0.5 mr-4 transition-all group-hover:w-16 bg-foreground group-hover:bg-foreground"
         }
       />
       <div
-        className={"transition-all text-foreground group-hover:text-foreground"}
+        className={
+          props.isActive
+            ? "transition-all text-foreground group-hover:text-foreground"
+            : "transition-all text-foreground group-hover:text-foreground"
+        }
       >
         {props.section}
       </div>
@@ -28,26 +39,62 @@ function MenuItem(props: MenuDetail) {
   );
 }
 
-const Menu: FC<MenuProps> = ({ MenuDetails }) => {
-  // Array of MenuItem Elements
-  const menu = MenuDetails.map((item, index) => {
-    const ref = "#" + item.href;
-    return (
-      <MenuItem
-        key={index}
-        section={item.section.toUpperCase()}
-        href={ref}
-      ></MenuItem>
+// Find which section the user is currently viewing using InterstionObserver
+const useSectionVisibility = (sectionIds: string[]): string => {
+  const [visibility, setVisibility] = useState<string>("");
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.map((entry) => {
+          if (entry.isIntersecting) {
+            setVisibility(entry.target.id);
+            // TODO: Delete log
+            console.log("visibility: " + entry.target.id);
+          }
+        });
+      },
+      { threshold: 0.5 } // Adjust this threshold as needed
     );
-  });
+
+    sectionIds.forEach((Id) => {
+      const ref = document.getElementById(Id);
+      if (ref) {
+        observer.observe(ref);
+      }
+    });
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
+  return visibility;
+};
+
+const Menu: FC<MenuProps> = ({ MenuDetails }) => {
+  // get an array of strings where each item is possible section the user could be viewing
+  const activeSection = useSectionVisibility(
+    MenuDetails.map((item) => item.section.toLowerCase())
+  );
+  // TODO: delete log
+  console.log("activeSection: " + activeSection);
+
+  // list of each jsx menu item element to render
+  const menu = MenuDetails.map((item) => (
+    <MenuItem
+      isActive={activeSection === item.section}
+      section={item.section.toUpperCase()}
+    ></MenuItem>
+  ));
 
   return (
-    <div
-      id="menu"
+    <header
+      id="navigation"
       className="hidden lg:flex lg:flex-col py-3 font-medium tracking-widest"
     >
       {menu}
-    </div>
+    </header>
   );
 };
 

@@ -7,9 +7,9 @@
   },
 
   "menu": [
-    {"section": "about", "href": "about"},
-    {"section": "experience", "href": "experience"},
-    {"section": "projects", "href": "projects"}
+    {"isActive": false, "section": "about"},
+    {"isActive": false, "section": "experience"},
+    {"isActive": false, "section": "projects"}
   ],
   "education": [  {
     "subject": "Mechanical Engineering",
