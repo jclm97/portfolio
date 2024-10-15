@@ -81,8 +81,9 @@ const Menu: FC<MenuProps> = ({ MenuDetails }) => {
   console.log("activeSection: " + activeSection);
 
   // list of each jsx menu item element to render
-  const menu = MenuDetails.map((item) => (
+  const menu = MenuDetails.map((item, index) => (
     <MenuItem
+      key={index}
       isActive={activeSection === item.section}
       section={item.section.toUpperCase()}
     ></MenuItem>
