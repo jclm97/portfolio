@@ -45,3 +45,6 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 - [] project description and skills
 - [x] remove education section?
 - [] mouse spotlight effect
+- [] new readme
+- [] putting sun or moon inside switch button?
+- [] update contacts. possibly put them in the json as configurable? might be difficult with symbols.

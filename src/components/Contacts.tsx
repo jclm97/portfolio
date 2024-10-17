@@ -8,7 +8,7 @@ const Contacts = () => {
     <div className="flex flex-row items-center justify-left gap-6 mt-10">
       <Button variant="outline">
         <a
-          href="https://www.linkedin.com/"
+          href="https://www.linkedin.com/in/shhassen/"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -16,7 +16,11 @@ const Contacts = () => {
         </a>
       </Button>
       <Button variant="outline">
-        <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://github.com/shassen14"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <Github />
         </a>
       </Button>
