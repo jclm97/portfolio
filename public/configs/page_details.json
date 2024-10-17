@@ -27,16 +27,16 @@
     "company": "Greensea IQ",
     "startDate": "Oct 2021",
     "endDate": "Feb 2024",
-    "description": "Here is an example written description which is a summary of what was done in this position.",
-    "skills": ["C++", "Python", "LCM", "OpenCV", "PCL", "Data Analysis", "TODO"],
+    "description": "I expanded Greensea's autonomy stack for a fleet of underwater robotics. This entailed localization, mapping, and obstacle avoidance for both holonomic and nonholonomic vehicles. Some projects I contributed towards are the following: EverClean (ship hull cleaning service), OPENSEA (hardware agnostic software for underwater robotics), Bayonet AUGV (sea floor surveying), and EOD (Explosive Ordnance Neutralization).",
+    "skills": ["C++", "Python", "LCM", "OpenCV", "PCL", "Git", "Docker", "Data Analysis"],
     "link": "https://greenseaiq.com/"
   }, { 
     "position": "Research Engineer",
     "company": "Bush Combat Development Complex",
     "startDate": "May 2020",
     "endDate": "Sep 2021",
-    "description": "Here is an example written description which is a summary of what was done in this position. Is this enough words?",
-    "skills": ["C++", "Python", "TODO"],
+    "description": "The main problem we were solving was related to multi-agent systems where we needed decisive coordination between multiple ground and air vehicles. I concentrated on sensor processing, mapping, and navigation for off-road ground automobiles.",
+    "skills": ["C++", "Python", "ROS", "OpenCV", "PCL", "Git", "Docker"],
     "link": "https://bcdc.tamus.edu/core-competencies/coordinated-air-ground-vehicle-maneuvering/"
   },
   { 
@@ -44,8 +44,8 @@
     "company": "Connected Autonomous Safe Technologies",
     "startDate": "Aug 2018",
     "endDate": "May 2020",
-    "description": "Here is an example written description which is a summary of what was done in this position. Is this enough words? Who knows? I have to meet a word count somehow.",
-    "skills": ["C++", "Python", "TODO"],
+    "description": "I designed and implemented a data-driven nonlinear longitudinal and lateral controller for ground vehicles.",
+    "skills": ["Python", "ROS"],
     "link": "https://cast.tamu.edu/"
     
   },  { 
@@ -53,8 +53,8 @@
     "company": "SAE AutoDrive Challenge",
     "startDate": "Aug 2017",
     "endDate": "May 2018",
-    "description": "Here is an example written description which is a summary of what was done in this position. Is this enough words? Who knows? I have to meet a word count somehow.",
-    "skills": ["C++", "Python", "TODO"],
+    "description": "I designed, developed, and applied controls for a commercial vehicle. The team ultimately won 2nd place overall.",
+    "skills": ["C++", "Python", "MATLAB", "ROS"],
     "link": "https://tees.tamu.edu/news/2018/05/texas-am-engineering-autodrive-challenge-team-takes-second-overall-in-first-competition-milestone.html"
   }],
   "projects":  [ { 

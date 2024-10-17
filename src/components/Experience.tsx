@@ -36,16 +36,16 @@ function ExperienceItem(props: ExperienceDetail) {
     // TODO need to work on the hover border/shadow
     <a href={props.link} target="_blank" rel="noopener noreferrer">
       <Card
-        className="flex flex-col lg:flex-row w-full min-h-fit border-transparent gap-0 mb-0 lg:px-3 lg:py-2
-    hover:border-cardhover-border hover:bg-cardhover-background hover:shadow-[inset_0_1px_0_0] hover:shadow-cardhover-shadow hover:drop-shadow-lg"
+        className="flex flex-col lg:flex-row w-full min-h-fit border-transparent gap-0 lg:gap-4 mb-0 lg:px-3 lg:py-2
+        hover:bg-cardhover-background hover:shadow-[inset_0_1px_0_0] hover:shadow-cardhover-shadow hover:drop-shadow-lg"
       >
-        <CardHeader className="h-full w-1/2 p-0 lg:py-1">
-          <CardTitle className="whitespace-normal">
+        <CardHeader className="h-full w-1/2 p-0">
+          <CardTitle className="text-base whitespace-normal">
             {props.startDate} - {props.endDate}
           </CardTitle>
         </CardHeader>
         <CardContent className="flex flex-col w-full p-0">
-          <p className="text-foreground text-base">
+          <p className="text-foreground font-bold text-base">
             {props.position} • {props.company}
           </p>
           {props.prevPositions?.map((position, index) => (
