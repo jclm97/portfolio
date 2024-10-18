@@ -1,7 +1,7 @@
 // following https://staticmania.com/blog/guide-to-creating-a-darklight-mode-toggle-in-next-js
 // but for typescript and my own twist with shadcn
 "use client";
-import { Moon, Sun } from "lucide-react";
+import { FiMoon, FiSun } from "react-icons/fi";
 import { useTheme } from "next-themes";
 import { Switch } from "@/components/ui/switch";
 import { useState } from "react";
@@ -11,10 +11,10 @@ const ChooseTheme = (isSwitchOn: boolean) => {
 
   if (isSwitchOn) {
     setTheme("light");
-    return <Sun></Sun>;
+    return <FiSun className="h-6 w-fit" />;
   } else {
     setTheme("dark");
-    return <Moon></Moon>;
+    return <FiMoon className="h-6 w-fit" />;
   }
 };
 

@@ -1,4 +1,5 @@
-import { Github, Linkedin, Youtube } from "lucide-react";
+// import { Github, Linkedin, Youtube } from "lucide-react";
+import { FiGithub, FiLinkedin, FiYoutube } from "react-icons/fi";
 import { Button } from "@/components/ui/button";
 import ThemeSwitcher from "@/components/utils/ThemeSwitcher";
 
@@ -12,7 +13,7 @@ const Contacts = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Linkedin />
+          <FiLinkedin className="h-6 w-fit" />
         </a>
       </Button>
       <Button variant="outline">
@@ -21,7 +22,7 @@ const Contacts = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Github />
+          <FiGithub className="h-6 w-fit" />
         </a>
       </Button>
       <Button variant="outline" className="">
@@ -30,7 +31,7 @@ const Contacts = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Youtube />
+          <FiYoutube className="h-6 w-fit" />
         </a>
       </Button>
       <ThemeSwitcher></ThemeSwitcher>
