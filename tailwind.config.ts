@@ -54,7 +54,8 @@ const config: Config = {
 					background: 'hsl(var(--cardhover-background))',
 					border: 'hsl(var(--cardhover-border))',
 					shadow: 'hsl(var(--cardhover-shadow))'
-				}
+				},
+				link : 'hsl(var(--link))'
   		},
   		borderRadius: {
   			lg: 'var(--radius)',

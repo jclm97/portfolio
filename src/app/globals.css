@@ -30,6 +30,8 @@
     --cardhover-background: 240 4.9% 83.9%;
     --cardhover-border: 30 0% 98%; /* fafafa */
     --cardhover-shadow: 240 3.7% 15.9%;
+
+    --link: 47.9 95.8% 53.1%;
   }
   .dark {
     --background: 0 11% 16%; /* 2D2424 */
@@ -56,6 +58,8 @@
     --cardhover-background: 0 10.6% 25.9%;
     --cardhover-border: 0 11% 16%; /* 2D2424 */
     --cardhover-shadow: 25 20% 65% / 0.1;
+
+    --link: 47.9 95.8% 53.1%;
   }
 }
 

@@ -8,6 +8,8 @@ import {
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { FC } from "react";
+import { LuArrowUpRight } from "react-icons/lu";
+import { FaLink } from "react-icons/fa";
 
 // TODO There is space on the bottom of this section that adds onto the gap to the section below.
 // This sucks because there is inconsistency spacing between sections.
@@ -15,6 +17,13 @@ import { FC } from "react";
 // used to have spacing between card but now there is problem with spacing between sections
 
 // TODO for card, can i get negative inset working? to make the card hover bigger easily
+// TODO: need to figure hover for smaller devices to make mainlink light up when card hover
+// currently only work if hovering over the position for those devices
+
+type LabelAndLink = {
+  label: string;
+  link: string;
+};
 
 type ExperienceDetail = {
   position: string;
@@ -24,7 +33,8 @@ type ExperienceDetail = {
   endDate: string;
   description: string;
   skills: string[];
-  link?: string;
+  mainLink?: string;
+  sideLinks?: LabelAndLink[];
 };
 
 type ExperienceProps = {
@@ -32,38 +42,76 @@ type ExperienceProps = {
 };
 
 function ExperienceItem(props: ExperienceDetail) {
+  let mainLinkElement: JSX.Element = <></>;
+  if (props.mainLink != null) {
+    mainLinkElement = (
+      <LuArrowUpRight className="ml-1 inline-block h-4 w-4 transition-transform group-hover/mainlink:translate-x-1 group-hover/mainlink:-translate-y-1 group-focus-visible/mainlink:translate-x-1 group-focus-visible/mainlink:-translate-y-1"></LuArrowUpRight>
+    );
+  }
+
+  let sideLinkElement: JSX.Element = <></>;
+  if (props.sideLinks != null) {
+    sideLinkElement = (
+      <CardFooter className="px-0 pb-2 flex flex-wrap gap-2">
+        {props.sideLinks.map((item, index) => (
+          <a
+            key={index}
+            href={item.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="relative inline-flex items-center gap-1 hover:text-link focus-visible:text-link mb-1"
+          >
+            <FaLink className="h-2 w-fit"></FaLink>
+            {item.label}
+          </a>
+        ))}
+      </CardFooter>
+    );
+  }
+
   return (
     // TODO need to work on the hover border/shadow
-    <a href={props.link} target="_blank" rel="noopener noreferrer">
-      <Card
-        className="flex flex-col lg:flex-row w-full min-h-fit border-transparent gap-0 lg:gap-4 mb-0 lg:px-3 lg:py-2
-        hover:bg-cardhover-background hover:shadow-[inset_0_1px_0_0] hover:shadow-cardhover-shadow hover:drop-shadow-lg"
-      >
-        <CardHeader className="h-full w-1/2 p-0">
-          <CardTitle className="text-base whitespace-normal">
-            {props.startDate} - {props.endDate}
-          </CardTitle>
-        </CardHeader>
-        <CardContent className="flex flex-col w-full p-0">
-          <p className="text-foreground font-bold text-base">
-            {props.position} • {props.company}
+    <Card
+      className="relative flex flex-col lg:flex-row w-full min-h-fit border-transparent gap-0 lg:gap-4 mb-0 lg:px-3 lg:py-2
+        hover:bg-cardhover-background hover:shadow-[inset_0_0_0_0] hover:shadow-cardhover-shadow hover:drop-shadow-lg"
+    >
+      <CardHeader className="h-full w-1/2 p-0">
+        <CardTitle className="text-base whitespace-normal">
+          {props.startDate} - {props.endDate}
+        </CardTitle>
+      </CardHeader>
+      <CardContent className="flex flex-col w-full p-0">
+        <div>
+          <a
+            href={props.mainLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group/mainlink text-foreground font-bold text-base hover:text-link focus-visible:text-link"
+          >
+            <span className="absolute -inset-x-0 -inset-y-0 hidden rounded sm:block"></span>
+            <span>
+              {props.position} • {props.company} {mainLinkElement}
+            </span>
+          </a>
+        </div>
+        {props.prevPositions?.map((position, index) => (
+          <p key={index} className="text-sm">
+            {position}
           </p>
-          {props.prevPositions?.map((position, index) => (
-            <p key={index} className="text-sm">
-              {position}
-            </p>
+        ))}
+        <CardDescription className="py-2 text-muted-foreground">
+          {props.description}
+        </CardDescription>
+
+        {sideLinkElement}
+
+        <CardFooter className="px-0 pb-2 flex flex-wrap gap-2">
+          {props.skills.map((skill, index) => (
+            <Badge key={index}>{skill}</Badge>
           ))}
-          <CardDescription className="py-2 text-muted-foreground">
-            {props.description}
-          </CardDescription>
-          <CardFooter className="px-0 pb-2 flex flex-wrap gap-2">
-            {props.skills.map((skill, index) => (
-              <Badge key={index}>{skill}</Badge>
-            ))}
-          </CardFooter>
-        </CardContent>
-      </Card>
-    </a>
+        </CardFooter>
+      </CardContent>
+    </Card>
   );
 }
 
@@ -79,13 +127,17 @@ const Experience: FC<ExperienceProps> = ({ experienceDetails }) => {
         endDate={item.endDate}
         description={item.description}
         skills={item.skills}
-        link={item.link}
+        mainLink={item.mainLink}
+        sideLinks={item.sideLinks}
       ></ExperienceItem>
     );
   });
 
   return (
-    <section id="experience" className="flex flex-col gap-3 mb-16 lg:mb-36">
+    <section
+      id="experience"
+      className="relative flex flex-col gap-3 mb-16 lg:mb-36"
+    >
       <div className="lg:hidden font-bold uppercase text-base text-foreground pb-3">
         Experience
       </div>
