@@ -49,3 +49,4 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 - [] putting sun or moon inside switch button?
 - [] update contacts. possibly put them in the json as configurable? might be difficult with symbols.
 - [] ability to add extra links within experience or project cards
+- [] be more consistent with margin/padding top and right or bottom and left to help with item spacing

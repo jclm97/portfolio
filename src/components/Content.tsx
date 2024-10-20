@@ -5,27 +5,34 @@ import Projects from "@/components/Projects";
 import Footnote from "@/components/Footnote";
 import PageDetailsFile from "@p/configs/page_details.json";
 
+enum Sections {
+  About = "about",
+  Education = "education",
+  Experience = "experience",
+  Projects = "projects",
+}
+
 // only supported section names
 // TODO: make it more complicated with enums? hashmap to string values?
 const Content = () => {
   const content = PageDetailsFile.menu.map((item, index) => {
-    if (item.section === "about") {
+    if (item.section.toLowerCase() === Sections.About) {
       return <About key={index}></About>;
-    } else if (item.section === "education") {
+    } else if (item.section.toLowerCase() === Sections.Education) {
       return (
         <Education
           educationDetails={PageDetailsFile.education}
           key={index}
         ></Education>
       );
-    } else if (item.section === "experience") {
+    } else if (item.section.toLowerCase() === Sections.Experience) {
       return (
         <Experience
           experienceDetails={PageDetailsFile.experience}
           key={index}
         ></Experience>
       );
-    } else if (item.section === "projects") {
+    } else if (item.section.toLowerCase() === Sections.Projects) {
       return (
         <Projects
           projectDetails={PageDetailsFile.projects}

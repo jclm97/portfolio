@@ -13,7 +13,7 @@ export default function Home() {
     <main className="flex flex-col min-h-screen items-center px-6 py-0 lg:px-24">
       <div className="flex flex-col z-5 w-full max-w-5xl font-sans text-sm lg:flex-row justify-between">
         <Header></Header>
-        <div className=" lg:w-1/2 pt-6 lg:pt-24">
+        <div className="lg:w-1/2 pt-6 lg:pt-24">
           <Content></Content>
         </div>
       </div>
