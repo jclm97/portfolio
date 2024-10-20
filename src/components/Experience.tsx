@@ -134,10 +134,7 @@ const Experience: FC<ExperienceProps> = ({ experienceDetails }) => {
   });
 
   return (
-    <section
-      id="experience"
-      className="relative flex flex-col gap-3 mb-16 lg:mb-36"
-    >
+    <section id="experience" className="flex flex-col gap-3 mb-16 lg:mb-36">
       <div className="lg:hidden font-bold uppercase text-base text-foreground pb-3">
         Experience
       </div>

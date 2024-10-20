@@ -14,7 +14,7 @@ const Header = () => {
   const headerDetail: HeaderDetail = PageDetailsFile.header;
 
   return (
-    <section className="lg:flex lg:flex-col lg:sticky lg:w-1/2 lg:justify-between lg:top-0 lg:py-24 lg:gap-4 lg:max-h-96">
+    <section className="flex flex-col lg:sticky lg:w-1/2 lg:justify-between lg:top-0 lg:py-24 lg:gap-4 lg:max-h-96">
       <div className="flex flex-col gap-4 lg:pr-24">
         <Avatar className="w-24 lg:w-48 h-auto">
           <AvatarImage src={headerDetail.image} />
