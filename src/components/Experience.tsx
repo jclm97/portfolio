@@ -88,7 +88,7 @@ function ExperienceItem(props: ExperienceDetail) {
             rel="noopener noreferrer"
             className="group/mainlink text-foreground font-bold text-base hover:text-link focus-visible:text-link"
           >
-            <span className="absolute -inset-x-0 -inset-y-0 hidden rounded sm:block"></span>
+            <span className="absolute -inset-x-0 -inset-y-0 hidden xxs:block"></span>
             <span>
               {props.position} • {props.company} {mainLinkElement}
             </span>

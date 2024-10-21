@@ -8,6 +8,13 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+		screens: {
+			// this was for pressing the link on cards to work on all screen devices
+			// for some reason device min-width is needed to use block?
+			// TODO: check if there is a way for this to be unnecessary
+			'xxs': '0px', // min-width
+		},
+		
   	extend: {
   		colors: {
   			background: 'hsl(var(--background))',
