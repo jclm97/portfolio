@@ -56,19 +56,22 @@
     "endDate": "May 2018",
     "description": "I designed, developed, and applied controls for a commercial vehicle. The team ultimately won 2nd place overall.",
     "skills": ["C++", "Python", "MATLAB", "ROS"],
-    "mainLink": "https://tees.tamu.edu/news/2018/05/texas-am-engineering-autodrive-challenge-team-takes-second-overall-in-first-competition-milestone.html"
+    "mainLink": "https://www.autodrivechallenge.com/",
+    "sideLinks": [{"label":"2nd Place Article", "link":"https://tees.tamu.edu/news/2018/05/texas-am-engineering-autodrive-challenge-team-takes-second-overall-in-first-competition-milestone.html"}]
+
   }],
   "projects":  [ { 
     "name": "GPT - The Office",
     "image": "https://raw.githubusercontent.com/shassen14/gpt_the_office/refs/heads/main/docs/main/generation.gif",
     "description": "Here is an example written description which is a summary of what was done in this position.",
     "skills": ["Python", "Pytorch", "Numpy", "LLM"],
-    "link": "https://github.com/shassen14/gpt_the_office"
+    "mainLink": "https://github.com/shassen14/gpt_the_office"
   }, { 
     "name": "Rust Robotics",
     "image":"https://raw.githubusercontent.com/shassen14/rust_robotics_media/refs/heads/main/models/n_joint_robotic_arm_2d.gif",
     "description": "Here is an example written description which is a summary of what was done in this position.",
     "skills": ["Rust", "More skills TBD"],
-    "link": "https://github.com/shassen14/rust_robotics"
+    "mainLink": "https://github.com/shassen14/rust_robotics",
+    "sideLinks": [{"label": "example", "link": "https://github.com/shassen14/rust_robotics_media/blob/main/models/bicycle_kinematic_pure_pursuit.gif"}]
   }]
 }

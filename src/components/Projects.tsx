@@ -8,13 +8,21 @@ import {
 import { Badge } from "@/components/ui/badge";
 import { FC } from "react";
 import Image from "next/image";
+import { LuArrowUpRight } from "react-icons/lu";
+import { FaLink } from "react-icons/fa";
+
+type LabelAndLink = {
+  label: string;
+  link: string;
+};
 
 type ProjectDetail = {
   name: string;
   image: string;
   description: string;
   skills: string[];
-  link?: string;
+  mainLink?: string;
+  sideLinks?: LabelAndLink[];
 };
 
 type ProjectProps = {
@@ -22,35 +30,73 @@ type ProjectProps = {
 };
 
 function ProjectItem(props: ProjectDetail) {
+  let mainLinkElement: JSX.Element = <></>;
+  if (props.mainLink != null) {
+    mainLinkElement = (
+      <LuArrowUpRight className="ml-1 inline-block h-4 w-4 transition-transform group-hover/mainlink:translate-x-1 group-hover/mainlink:-translate-y-1 group-focus-visible/mainlink:translate-x-1 group-focus-visible/mainlink:-translate-y-1"></LuArrowUpRight>
+    );
+  }
+
+  let sideLinkElement: JSX.Element = <></>;
+  if (props.sideLinks != null) {
+    sideLinkElement = (
+      <CardFooter className="px-0 pb-2 flex flex-wrap gap-2">
+        {props.sideLinks.map((item, index) => (
+          <a
+            key={index}
+            href={item.link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="relative inline-flex items-center gap-1 hover:text-link focus-visible:text-link mb-1"
+          >
+            <FaLink className="h-2 w-fit"></FaLink>
+            {item.label}
+          </a>
+        ))}
+      </CardFooter>
+    );
+  }
   return (
-    <a href={props.link} target="_blank" rel="noopener noreferrer">
-      <Card
-        className="flex flex-row w-full min-h-fit border-transparent 
-    hover:border-cardhover-border hover:bg-cardhover-background hover:shadow-[inset_0_1px_0_0] hover:shadow-cardhover-shadow hover:drop-shadow-lg"
-      >
-        <CardHeader className="w-1/2 p-0 lg:p-3">
-          <Image
-            src={props.image}
-            alt={props.name + " picture"}
-            width={1920}
-            height={1080}
-            unoptimized
-            className="whitespace-normal rounded-[0.5rem]"
-          />
-        </CardHeader>
-        <CardContent className="flex flex-col pt-2 w-full">
-          <p className="text-primary font-bold">{props.name} </p>
-          <CardDescription className="py-3 text-muted-foreground">
-            {props.description}
-          </CardDescription>
-          <CardFooter className="flex flex-wrap p-0 gap-2">
-            {props.skills.map((skill, index) => (
-              <Badge key={index}>{skill}</Badge>
-            ))}
-          </CardFooter>
-        </CardContent>
-      </Card>
-    </a>
+    <Card
+      className="relative flex flex-row w-full min-h-fit border-transparent py-2
+        hover:bg-cardhover-background hover:shadow-[inset_0_0_0_0] hover:shadow-cardhover-shadow hover:drop-shadow-lg"
+    >
+      <CardHeader className="h-full w-1/2 justify-center items-center">
+        <Image
+          src={props.image}
+          alt={props.name + " picture"}
+          width={1920}
+          height={1080}
+          unoptimized
+          className="flex flex-col whitespace-normal rounded-[0.5rem] m-auto"
+        />
+      </CardHeader>
+      <CardContent className="flex flex-col p-0 w-full">
+        <a
+          href={props.mainLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group/mainlink text-foreground font-bold text-base hover:text-link focus-visible:text-link"
+        >
+          <span className="absolute inset-x-0 inset-y-0 hidden xxs:block"></span>
+          <span>
+            {props.name} {mainLinkElement}
+          </span>
+        </a>
+        <CardDescription className="py-2 text-muted-foreground">
+          {props.description}
+        </CardDescription>
+
+        {sideLinkElement}
+
+        <CardFooter className="p-0 flex flex-wrap gap-2">
+          {props.skills.map((skill, index) => (
+            <Badge key={index}>{skill}</Badge>
+          ))}
+        </CardFooter>
+      </CardContent>
+    </Card>
+    // </a>
   );
 }
 
@@ -63,7 +109,8 @@ const Projects: FC<ProjectProps> = ({ projectDetails }) => {
         image={item.image}
         description={item.description}
         skills={item.skills}
-        link={item.link}
+        mainLink={item.mainLink}
+        sideLinks={item.sideLinks}
       ></ProjectItem>
     );
   });

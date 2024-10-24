@@ -81,19 +81,17 @@ function ExperienceItem(props: ExperienceDetail) {
         </CardTitle>
       </CardHeader>
       <CardContent className="flex flex-col w-full p-0">
-        <div>
-          <a
-            href={props.mainLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="group/mainlink text-foreground font-bold text-base hover:text-link focus-visible:text-link"
-          >
-            <span className="absolute -inset-x-0 -inset-y-0 hidden xxs:block"></span>
-            <span>
-              {props.position} • {props.company} {mainLinkElement}
-            </span>
-          </a>
-        </div>
+        <a
+          href={props.mainLink}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group/mainlink text-foreground font-bold text-base hover:text-link focus-visible:text-link"
+        >
+          <span className="absolute inset-x-0 inset-y-0 hidden xxs:block"></span>
+          <span>
+            {props.position} • {props.company} {mainLinkElement}
+          </span>
+        </a>
         {props.prevPositions?.map((position, index) => (
           <p key={index} className="text-sm">
             {position}
