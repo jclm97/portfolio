@@ -105,7 +105,9 @@ function ExperienceItem(props: ExperienceDetail) {
 
         <CardFooter className="px-0 pb-2 flex flex-wrap gap-2">
           {props.skills.map((skill, index) => (
-            <Badge key={index}>{skill}</Badge>
+            <Badge key={index} className="text-link bg-link/10">
+              {skill}
+            </Badge>
           ))}
         </CardFooter>
       </CardContent>
