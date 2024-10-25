@@ -76,7 +76,7 @@ function ExperienceItem(props: ExperienceDetail) {
         hover:bg-cardhover-background hover:shadow-[inset_0_0_0_0] hover:shadow-cardhover-shadow hover:drop-shadow-lg"
     >
       <CardHeader className="h-full w-1/2 p-0">
-        <CardTitle className="text-base whitespace-normal">
+        <CardTitle className="text-base text-foreground whitespace-normal">
           {props.startDate} - {props.endDate}
         </CardTitle>
       </CardHeader>

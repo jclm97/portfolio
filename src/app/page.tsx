@@ -11,7 +11,7 @@ import MouseSpotlightItem from "@/components/utils/MouseSpotlight";
 
 export default function Home() {
   return (
-    <main className="flex flex-col min-h-screen items-center px-6 py-0 lg:px-24">
+    <main className="flex flex-col min-h-screen items-center px-6 py-8 lg:px-24">
       <MouseSpotlightItem />
       <div className="flex flex-col z-5 w-full max-w-5xl font-sans text-sm lg:flex-row justify-between">
         <Header></Header>
