@@ -72,7 +72,7 @@ function ExperienceItem(props: ExperienceDetail) {
   return (
     // TODO need to work on the hover border/shadow
     <Card
-      className="relative flex flex-col lg:flex-row w-full min-h-fit border-transparent gap-0 lg:gap-4 mb-0 lg:px-3 lg:py-2
+      className="relative flex flex-col lg:flex-row w-full min-h-fit border-transparent bg-transparent gap-0 lg:gap-4 mb-0 lg:px-3 lg:py-2
         hover:bg-cardhover-background hover:shadow-[inset_0_0_0_0] hover:shadow-cardhover-shadow hover:drop-shadow-lg"
     >
       <CardHeader className="h-full w-1/2 p-0">
