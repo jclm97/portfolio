@@ -24,14 +24,14 @@ function MenuItem(props: MenuDetail) {
       <div
         className={
           props.isActive
-            ? "w-16 h-0.5 mr-4 transition-all group-hover:w-16 bg-foreground group-hover:bg-foreground"
+            ? "w-16 h-[0.16rem] mr-4 transition-all group-hover:w-16 bg-foreground group-hover:bg-foreground"
             : "w-8 h-0.5 mr-4 transition-all group-hover:w-16 bg-muted-foreground group-hover:bg-foreground"
         }
       />
       <div
         className={
           props.isActive
-            ? "transition-all text-foreground group-hover:text-foreground"
+            ? "transition-all text-foreground font-extrabold group-hover:text-foreground"
             : "transition-all text-muted-foreground group-hover:text-foreground"
         }
       >
