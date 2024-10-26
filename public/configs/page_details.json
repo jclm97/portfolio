@@ -73,5 +73,11 @@
     "skills": ["Rust", "More skills TBD"],
     "mainLink": "https://github.com/shassen14/rust_robotics",
     "sideLinks": [{"label": "example", "link": "https://github.com/shassen14/rust_robotics_media/blob/main/models/bicycle_kinematic_pure_pursuit.gif"}]
+  }, { 
+    "name": "samirhassen.vercel.app",
+    "image":"images/website_screenshot.png",
+    "description": "Here is an example written description which is a summary of what was done in this position.",
+    "skills": ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+    "mainLink": "https://github.com/shassen14/portfolio_website"
   }]
 }

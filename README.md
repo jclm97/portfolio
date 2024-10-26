@@ -51,3 +51,4 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 - [x] ability to add extra links within experience or project cards
 - [ ] be more consistent with margin/padding top and right or bottom and left to help with item spacing
 - [ ] have links change color in footer and in about sections
+- [ ] get a domain name for website
