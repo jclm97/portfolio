@@ -39,8 +39,8 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 - [x] add section titles for each section only for mobile or not "large" monitors
 - [x] for large monitors, have the menu items highlighted when scrolling to that section
-- [ ] finalize color themese for dark
-- [ ] finalize color themese for light
+- [x] finalize color themes for dark
+- [x] finalize color themes for light
 - [x] experience description and skills (initial draft)
 - [ ] project description and skills
 - [x] remove education section?
@@ -50,3 +50,4 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 - [ ] update contacts. possibly put them in the json as configurable? might be difficult with symbols.
 - [x] ability to add extra links within experience or project cards
 - [ ] be more consistent with margin/padding top and right or bottom and left to help with item spacing
+- [ ] have links change color in footer and in about sections
