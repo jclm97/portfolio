@@ -58,10 +58,10 @@ function ProjectItem(props: ProjectDetail) {
   }
   return (
     <Card
-      className="relative flex flex-row w-full min-h-fit border-transparent bg-transparent py-2 
+      className="relative flex flex-col lg:flex-row w-full min-h-fit border-transparent bg-transparent py-2 
         hover:bg-cardhover-background hover:shadow-[inset_0_0_0_0] hover:shadow-cardhover-shadow hover:drop-shadow-lg"
     >
-      <CardHeader className="h-full w-1/2 justify-center items-center">
+      <CardHeader className="h-full lg:w-1/2 justify-center items-center">
         <Image
           src={props.image}
           alt={props.name + " picture"}
