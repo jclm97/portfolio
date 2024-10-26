@@ -16,9 +16,9 @@ const Header = () => {
   return (
     <section className="flex flex-col lg:sticky lg:w-1/2 lg:justify-between lg:top-0 lg:py-24 lg:gap-4 lg:max-h-96">
       <div className="flex flex-col gap-4 lg:pr-24">
-        <Avatar className="w-24 lg:w-48 h-auto">
+        <Avatar className="w-24 lg:w-48 h-auto border-2 border-muted-foreground">
           <AvatarImage src={headerDetail.image} />
-          <AvatarFallback className="w-24 h-24 lg:w-48 lg:h-48">
+          <AvatarFallback className="w-24 h-24 lg:w-48 lg:h-48 border-2 border-muted-foreground">
             SH
           </AvatarFallback>
         </Avatar>

@@ -10,7 +10,7 @@ const Footnote = () => {
         >
           Brittany Chiang&apos;s website
         </a>{" "}
-        was my inspiration.{" "}
+        design was my inspiration.{" "}
         <a
           className="text-foreground hover:text-link"
           href="https://nextjs.org/"
