@@ -63,20 +63,20 @@
   "projects":  [ { 
     "name": "GPT - The Office",
     "image": "https://raw.githubusercontent.com/shassen14/gpt_the_office/refs/heads/main/docs/main/generation.gif",
-    "description": "Here is an example written description which is a summary of what was done in this position.",
+    "description": "A Generative Pretrained Model (GPT) using a similar decoder architecture from \"Attention is All You Need\" utilizes scripts from \"The Office\" to create scripts similar to the show. There are two tokenization method: \bcharacter-wise tokens and GPT-2 tokens. While this was tested and trained on a singular GPU, I hope to move this project forward with multi-GPU processing.",
     "skills": ["Python", "Pytorch", "Numpy", "LLM"],
     "mainLink": "https://github.com/shassen14/gpt_the_office"
   }, { 
     "name": "Rust Robotics",
     "image":"https://raw.githubusercontent.com/shassen14/rust_robotics_media/refs/heads/main/models/n_joint_robotic_arm_2d.gif",
-    "description": "Here is an example written description which is a summary of what was done in this position.",
+    "description": "Currently, this includes some basic downstream algorithms (system modeling, path tracking, and controls). The goal is to create algorithms for majority of the autonomy pipeline from sensor data processing to controls.",
     "skills": ["Rust", "More skills TBD"],
     "mainLink": "https://github.com/shassen14/rust_robotics",
     "sideLinks": [{"label": "example", "link": "https://github.com/shassen14/rust_robotics_media/blob/main/models/bicycle_kinematic_pure_pursuit.gif"}]
   }, { 
-    "name": "samirhassen.vercel.app",
+    "name": "samirhassen.com",
     "image":"images/website_screenshot.png",
-    "description": "Here is an example written description which is a summary of what was done in this position.",
+    "description": "I'm not a frontend developer by any means, but I created this portfolio website using Brittany Chiang's website as inspiration. I learned and executed ideas in an unfamiliar domain.",
     "skills": ["Next.js", "React", "TypeScript", "Tailwind CSS"],
     "mainLink": "https://github.com/shassen14/portfolio_website"
   }]
