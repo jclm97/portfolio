@@ -91,7 +91,7 @@ One can change the section order which will change the order of which section sh
 ```
  "experience":  [ { 
     "position": "Position",
-    "prevPositions": [""],
+    "prevPositions": ["Previous", "Positions", "Held at the same company"],
     "company": "Company",
     "startDate": "Oct 1999",
     "endDate": "Oct 2003",
