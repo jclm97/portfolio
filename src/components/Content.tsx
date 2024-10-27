@@ -16,29 +16,34 @@ enum Sections {
 // TODO: make it more complicated with enums? hashmap to string values?
 const Content = () => {
   const content = PageDetailsFile.menu.map((item, index) => {
-    if (item.section.toLowerCase() === Sections.About) {
-      return <About key={index}></About>;
-    } else if (item.section.toLowerCase() === Sections.Education) {
-      return (
-        <Education
-          educationDetails={PageDetailsFile.education}
-          key={index}
-        ></Education>
-      );
-    } else if (item.section.toLowerCase() === Sections.Experience) {
-      return (
-        <Experience
-          experienceDetails={PageDetailsFile.experience}
-          key={index}
-        ></Experience>
-      );
-    } else if (item.section.toLowerCase() === Sections.Projects) {
-      return (
-        <Projects
-          projectDetails={PageDetailsFile.projects}
-          key={index}
-        ></Projects>
-      );
+    switch (item.section.toLowerCase()) {
+      case Sections.About: {
+        return <About key={index}></About>;
+      }
+      case Sections.Education: {
+        return (
+          <Education
+            educationDetails={PageDetailsFile.education}
+            key={index}
+          ></Education>
+        );
+      }
+      case Sections.Experience: {
+        return (
+          <Experience
+            experienceDetails={PageDetailsFile.experience}
+            key={index}
+          ></Experience>
+        );
+      }
+      case Sections.Projects: {
+        return (
+          <Projects
+            projectDetails={PageDetailsFile.projects}
+            key={index}
+          ></Projects>
+        );
+      }
     }
   });
 
