@@ -21,8 +21,7 @@ I programmed this website myself trying to implement Brittany's design, so feel 
 ### TL;DR
 
 * Yes, you can fork this repo. Give Brittany proper credit by linking back to [brittanychiang.com](https://brittanychiang.com).
-* Feel free to give me credit as well for programming this as well 
-by linking back to [samirhassen.com](https://samirhassen.com).
+* Feel free to give me credit as well for programming this by linking back to [samirhassen.com](https://samirhassen.com).
 
 ## Getting Started
 
