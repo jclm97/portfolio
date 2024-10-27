@@ -14,14 +14,8 @@ Portfolio website which was inspired by <a href="https://brittanychiang.com" tar
 
 ## 🚨 Forking this repo (please read!)
 
-Feel free to use this code for your own website, but please give proper credit linking back to [brittanychiang.com](https://brittanychiang.com) since a lot of this is her work.
-
-I programmed this website myself trying to implement Brittany's design, so feel free to give me credit as well if using my code. I like sharing code with others. Just don't claim that you programmed everything yourself.
-
-### TL;DR
-
-* Yes, you can fork this repo. Give Brittany proper credit by linking back to [brittanychiang.com](https://brittanychiang.com).
-* Feel free to give me credit as well for programming this by linking back to [samirhassen.com](https://samirhassen.com).
+* Feel free to use this code for your own website. Give Brittany proper credit by linking back to [brittanychiang.com](https://brittanychiang.com).
+* Feel free to give me credit as well for programming this by linking back to [samirhassen.com](https://samirhassen.com). I like sharing code with others. Just don't claim that you programmed everything yourself.
 
 ## Getting Started
 
