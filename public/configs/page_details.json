@@ -70,9 +70,9 @@
     "name": "Rust Robotics",
     "image":"https://raw.githubusercontent.com/shassen14/rust_robotics_media/refs/heads/main/models/n_joint_robotic_arm_2d.gif",
     "description": "Currently, this includes some basic downstream algorithms (system modeling, path tracking, and controls). The goal is to create algorithms for majority of the autonomy pipeline from sensor data processing to controls.",
-    "skills": ["Rust", "More skills TBD"],
+    "skills": ["Rust"],
     "mainLink": "https://github.com/shassen14/rust_robotics",
-    "sideLinks": [{"label": "example", "link": "https://github.com/shassen14/rust_robotics_media/blob/main/models/bicycle_kinematic_pure_pursuit.gif"}]
+    "sideLinks": []
   }, { 
     "name": "samirhassen.com",
     "image":"images/website_screenshot.png",
