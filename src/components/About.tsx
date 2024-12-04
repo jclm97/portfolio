@@ -19,12 +19,12 @@ const About = () => {
           my focus has been more upstream where I get to be more involved with
           perception and mapping, and I hope to stay in this realm.
         </p>
-        <p className="">
+        {/* <p className="">
           I&apos;ve been blessed to work with amazing people who I learned a lot
           from throughout my career. I want to share this knowledge in form of
           videos during my free time. Feel free to watch (hopefully) educational
           and entertaining videos here.
-        </p>
+        </p> */}
       </div>
     </section>
   );
