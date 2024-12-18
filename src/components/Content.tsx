@@ -13,7 +13,6 @@ enum Sections {
 }
 
 // only supported section names
-// TODO: make it more complicated with enums? hashmap to string values?
 const Content = () => {
   const content = PageDetailsFile.menu.map((item, index) => {
     switch (item.section.toLowerCase()) {

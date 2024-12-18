@@ -134,11 +134,22 @@ const Experience: FC<ExperienceProps> = ({ experienceDetails }) => {
   });
 
   return (
-    <section id="experience" className="flex flex-col gap-3 mb-16 lg:mb-36">
+    <section id="experience" className="flex flex-col gap-3 mb-16 lg:mb-24">
       <div className="lg:hidden font-bold uppercase text-base text-foreground pb-3">
         Experience
       </div>
       {experience}
+      <a
+        href="resume.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="group/mainlink text-foreground font-bold text-base hover:text-link focus-visible:text-link"
+      >
+        <span>View Full Resume</span>
+        <span>
+          <LuArrowUpRight className="ml-1 inline-block h-4 w-4 transition-transform group-hover/mainlink:translate-x-1 group-hover/mainlink:-translate-y-1 group-focus-visible/mainlink:translate-x-1 group-focus-visible/mainlink:-translate-y-1"></LuArrowUpRight>
+        </span>
+      </a>
     </section>
   );
 };
