@@ -1,0 +1,75 @@
+{
+  "header": {
+    "image": "images/jc.png",
+    "introduction": "Hi, I’m Juan Carlos López Morales",
+    "position": "Frontend Developer Learner",
+    "summary": "Experience in systems administration and full-stack web development using React, Tailwind CSS, PHP, Node.js and MySQL."
+  },
+
+  "menu": [
+    { "isActive": false, "section": "about" },
+    { "isActive": false, "section": "experience" },
+    { "isActive": false, "section": "projects" }
+  ],
+
+  "education": [
+    {
+      "subject": "Computer Engineering",
+      "degree": "B.Sc.",
+      "university": "University of Granada",
+      "date": "Nov 2023"
+    },
+    {
+      "subject": "Cybersecurity and Privacy",
+      "degree": "M.Sc.",
+      "university": "University of Granada",
+      "date": "Jun 2025"
+    }
+  ],
+
+  "experience": [
+    {
+      "position": "Systems Administrator",
+      "company": "INGESA – Hospital Universitario de Ceuta",
+      "startDate": "Jan 2024",
+      "endDate": "Present",
+      "description": "Responsible for the installation, configuration and maintenance of clinical and administrative IT systems in a hospital environment. Managed Windows and Linux servers, handled user support, backups, network security and monitoring.",
+      "skills": ["Linux", "Windows Server", "Bash scripting", "Docker", "Monitoring", "SSL/TLS"],
+      "mainLink": "https://www.ingesa.sanidad.gob.es/"
+    },
+    {
+      "position": "Founder & CTO",
+      "company": "Clouthy (clouthy.com)",
+      "startDate": "Oct 2024",
+      "endDate": "Present",
+      "description": "Leading development of an online fashion marketplace on WordPress with custom React components. Designed user registration, product catalog, URL-based product requests and cart system. Managed hosting deployment and CI/CD.",
+      "skills": ["WordPress", "PHP", "MySQL", "JavaScript", "Python"],
+      "mainLink": "https://clouthy.com"
+    }
+  ],
+
+  "projects": [
+    {
+      "name": "Clouthy Marketplace",
+      "image": "images/logo-clouthy.png",
+      "description": "A WordPress-based fashion marketplace I built as founder and CTO. Users can browse products, request items by URL, select size and quantity, and complete orders. Integrated custom React components for an interactive UX.",
+      "skills": ["WordPress", "PHP", "MySQL", "JavaScript", "Python"],
+      "mainLink": "https://clouthy.com"
+    },
+    {
+      "name": "Mar de Olivos Ceuta",
+      "image": "images/logo-mardeolivos.png",
+      "description": "Developed the official website for Mar de Olivos restaurant in Ceuta. Implemented a mobile-first menu presentation with alternating image/description, reservation form and interactive guest messages.",
+      "skills": ["React","HTML", "CSS", "JavaScript", "Responsive Design"],
+      "mainLink": "https://mardeolivosceuta.es"
+    },
+    {
+      "name": "INGESA Hospital Inventory System",
+      "image": "images/logo-ingesa.png",
+      "description": "Built a web-based inventory management system for INGESA’s hospital assets. Recreated an existing Access database schema in MySQL, developed a RESTful PHP backend running on Apache, and crafted a responsive HTML/CSS/JavaScript front end to allow staff to add, edit, search and report on medical equipment, consumables and software licenses.",
+      "skills": ["PHP", "MySQL", "Apache", "HTML5", "CSS3", "JavaScript", "Bootstrap"],
+      "mainLink": "https://github.com/jclm97/ingsesa-inventory-system"
+    }
+
+  ]
+}
