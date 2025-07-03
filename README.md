@@ -11,7 +11,7 @@ Portfolio personal desarrollado por <strong>Juan Carlos López Morales</strong>,
 </p>
 
 <div align="center">
-  <img alt="Website Visual" src="public/images/website_screenshot.png" />
+  <img alt="Website Visual" src="public/images/imagenweb.png" />
 </div>
 
 ## 🚀 ¿Puedo usar este repositorio?
