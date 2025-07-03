@@ -1,3 +1,4 @@
+import { Badge } from "@/components/ui/badge";
 import {
   Card,
   CardContent,
@@ -5,11 +6,10 @@ import {
   CardFooter,
   CardHeader,
 } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import { FC } from "react";
 import Image from "next/image";
-import { LuArrowUpRight } from "react-icons/lu";
+import { FC } from "react";
 import { FaLink } from "react-icons/fa";
+import { LuArrowUpRight } from "react-icons/lu";
 
 type LabelAndLink = {
   label: string;
@@ -58,7 +58,7 @@ function ProjectItem(props: ProjectDetail) {
   }
   return (
     <Card
-      className="relative flex flex-col lg:flex-row w-full min-h-fit border-transparent bg-transparent py-2 
+      className="relative flex flex-col lg:flex-row w-full min-h-fit border-transparent bg-transparent py-2
         hover:bg-cardhover-background hover:shadow-[inset_0_0_0_0] hover:shadow-cardhover-shadow hover:drop-shadow-lg"
     >
       <CardHeader className="h-full lg:w-1/2 justify-center items-center">

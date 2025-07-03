@@ -1,16 +1,10 @@
+
 const Footnote = () => {
   return (
-    <div id="footnote" className="flex mt-10 mb-16">
-      <p className="text-muted-foreground">
-        <a
-          className="text-foreground hover:text-link"
-          href="https://brittanychiang.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Brittany Chiang&apos;s website
-        </a>{" "}
-        design was my inspiration.{" "}
+    <div id="footnote" className="flex justify-center mt-10 mb-16">
+      <p className="text-muted-foreground text-center">
+        © {new Date().getFullYear()} Juan Carlos López Morales.
+        Built with{" "}
         <a
           className="text-foreground hover:text-link"
           href="https://nextjs.org/"
@@ -31,13 +25,13 @@ const Footnote = () => {
         , and{" "}
         <a
           className="text-foreground hover:text-link"
-          href="https://ui.shadcn.com/"
+          href="https://vitejs.dev/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          shadcn/ui
-        </a>{" "}
-        were used to build this portfolio website.
+          Vite
+        </a>
+        .
       </p>
     </div>
   );

@@ -1,14 +1,14 @@
+import "@/components/utils/ThemeProvider";
+import ThemeProvider from "@/components/utils/ThemeProvider";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import "@/components/utils/ThemeProvider";
-import ThemeProvider from "@/components/utils/ThemeProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Samir Hassen",
-  description: "Just a dude on the internet",
+  title: "Juan Carlos López",
+  description: "jclm97 porfolio",
 };
 
 export default function RootLayout({

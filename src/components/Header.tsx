@@ -1,7 +1,7 @@
-import Menu from "./Menu";
-import Contacts from "./Contacts";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import PageDetailsFile from "@p/configs/page_details.json";
+import Contacts from "./Contacts";
+import Menu from "./Menu";
 
 type HeaderDetail = {
   image: string;
@@ -14,7 +14,7 @@ const Header = () => {
   const headerDetail: HeaderDetail = PageDetailsFile.header;
 
   return (
-    <section className="flex flex-col lg:sticky lg:w-1/2 lg:justify-between lg:top-0 lg:py-24 lg:gap-4 lg:max-h-96">
+    <section className="flex flex-col lg:sticky lg:w-1/2 lg:justify-between lg:top-0 lg:py-4 lg:gap-4 lg:max-h-96">
       <div className="flex flex-col gap-4 lg:pr-24">
         <Avatar className="w-24 lg:w-48 h-auto border-2 border-foreground">
           <AvatarImage src={headerDetail.image} />

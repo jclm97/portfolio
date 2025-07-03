@@ -1,6 +1,5 @@
 "use client";
-import { useState, useEffect } from "react";
-import { FC } from "react";
+import { FC, useEffect, useState } from "react";
 
 // TODO: Change name to Navigation?
 // Currently only works without education. Education section is too small and messes
@@ -82,7 +81,9 @@ const Menu: FC<MenuProps> = ({ MenuDetails }) => {
   const menu = MenuDetails.map((item, index) => (
     <MenuItem
       key={index}
-      isActive={activeSection === item.section}
+      // Comparamos en lowercase con lowercase
+      isActive={activeSection === item.section.toLowerCase()}
+      // Si quieres mantener la visualización en mayúsculas, haz toUpperCase() aquí
       section={item.section.toUpperCase()}
     ></MenuItem>
   ));
@@ -90,7 +91,7 @@ const Menu: FC<MenuProps> = ({ MenuDetails }) => {
   return (
     <header
       id="navigation"
-      className="hidden lg:flex lg:flex-col py-3 font-medium tracking-widest"
+      className="hidden lg:flex lg:flex-col py-1 font-medium tracking-widest"
     >
       {menu}
     </header>

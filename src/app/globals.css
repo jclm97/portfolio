@@ -7,8 +7,10 @@
 
 @layer base {
   :root {
-    --background: 42 100% 95%; /* FFF8E8 */
-    --foreground: 20 31% 20%; /* #432e23 */
+    --background: 210 20% 98%;
+      /* hsl(210,20%,98%) ≈ #f7fafc con toque azul */
+      --foreground: 210 10% 20%;
+      /* hsl(210,10%,20%) ≈ #2a2e38 */
     --card: 30 0% 98%; /* fafafa */
     --card-foreground: 20 31% 20%; /* #432e23 */
     --popover: 30 0% 98%; /* fafafa */
@@ -37,8 +39,10 @@
     --spotlight: 40 65% 80%;
   }
   .dark {
-    --background: 0 11% 16%; /* 2D2424 */
-    --foreground: 30 0% 98%; /* fafafa */
+    --background: 210 15% 10%;
+      /* hsl(210,15%,10%) ≈ #11181f */
+      --foreground: 0 0% 98%;
+      /* #fafafa */
     --card: 0 11% 16%; /* 2D2424 */
     --card-foreground: 30 0% 98%; /* fafafa */
     --popover: 0 11% 16%; /* 2D2424 */
