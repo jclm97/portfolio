@@ -1,3 +1,4 @@
+import { Badge } from "@/components/ui/badge";
 import {
   Card,
   CardContent,
@@ -6,10 +7,9 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
 import { FC } from "react";
-import { LuArrowUpRight } from "react-icons/lu";
 import { FaLink } from "react-icons/fa";
+import { LuArrowUpRight } from "react-icons/lu";
 
 // TODO There is space on the bottom of this section that adds onto the gap to the section below.
 // This sucks because there is inconsistency spacing between sections.
@@ -145,7 +145,7 @@ const Experience: FC<ExperienceProps> = ({ experienceDetails }) => {
         rel="noopener noreferrer"
         className="group/mainlink text-foreground font-bold text-base hover:text-link focus-visible:text-link"
       >
-        <span>View Full Resume</span>
+        <span>Curriculum Vitae</span>
         <span>
           <LuArrowUpRight className="ml-1 inline-block h-4 w-4 transition-transform group-hover/mainlink:translate-x-1 group-hover/mainlink:-translate-y-1 group-focus-visible/mainlink:translate-x-1 group-focus-visible/mainlink:-translate-y-1"></LuArrowUpRight>
         </span>

@@ -1,16 +1,17 @@
 import About from "@/components/About";
 import Education from "@/components/Education";
 import Experience from "@/components/Experience";
-import Projects from "@/components/Projects";
 import Footnote from "@/components/Footnote";
+import Projects from "@/components/Projects";
 import PageDetailsFile from "@p/configs/page_details.json";
 
 enum Sections {
-  About = "about",
-  Education = "education",
-  Experience = "experience",
-  Projects = "projects",
+  About = "sobre mi",
+  Education = "formacion",
+  Experience = "experiencia",
+  Projects = "proyectos",
 }
+
 
 // only supported section names
 const Content = () => {

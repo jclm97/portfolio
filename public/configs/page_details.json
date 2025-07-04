@@ -1,48 +1,48 @@
 {
   "header": {
     "image": "images/jc.png",
-    "introduction": "Hi, I’m Juan Carlos López Morales",
-    "position": "Frontend Developer Learner",
-    "summary": "Experience in systems administration and full-stack web development using React, Tailwind CSS, PHP, Node.js and MySQL."
+    "introduction": "Hola, soy Juan Carlos López Morales",
+    "position": "Desarrollador Frontend en formación",
+    "summary": "Experiencia en administración de sistemas y desarrollo web full-stack con React, Tailwind CSS, PHP, Node.js y MySQL."
   },
 
   "menu": [
-    { "isActive": false, "section": "about" },
-    { "isActive": false, "section": "experience" },
-    { "isActive": false, "section": "projects" }
+    { "isActive": false, "section": "sobre mi" },
+    { "isActive": false, "section": "experiencia" },
+    { "isActive": false, "section": "proyectos" }
   ],
 
   "education": [
     {
-      "subject": "Computer Engineering",
-      "degree": "B.Sc.",
-      "university": "University of Granada",
+      "subject": "Ingeniería Informática",
+      "degree": "Grado",
+      "university": "Universidad de Granada",
       "date": "Nov 2023"
     },
     {
-      "subject": "Cybersecurity and Privacy",
-      "degree": "M.Sc.",
-      "university": "University of Granada",
+      "subject": "Ciberseguridad y Privacidad",
+      "degree": "Máster",
+      "university": "Universidad de Granada",
       "date": "Jun 2025"
     }
   ],
 
   "experience": [
     {
-      "position": "Systems Administrator",
+      "position": "Administrador de Sistemas",
       "company": "INGESA – Hospital Universitario de Ceuta",
-      "startDate": "Jan 2024",
-      "endDate": "Present",
-      "description": "Responsible for the installation, configuration and maintenance of clinical and administrative IT systems in a hospital environment. Managed Windows and Linux servers, handled user support, backups, network security and monitoring.",
-      "skills": ["Linux", "Windows Server", "Bash scripting", "Docker", "Monitoring", "SSL/TLS"],
+      "startDate": "Ene 2024",
+      "endDate": "Actualidad",
+      "description": "Responsable de la instalación, configuración y mantenimiento de sistemas informáticos clínicos y administrativos en entorno hospitalario. Gestión de servidores Windows y Linux, soporte a usuarios, copias de seguridad, seguridad de red y monitorización.",
+      "skills": ["Linux", "Windows Server", "Bash scripting", "Docker", "Monitorización", "SSL/TLS"],
       "mainLink": "https://www.ingesa.sanidad.gob.es/"
     },
     {
-      "position": "Founder & CTO",
+      "position": "Fundador y CTO",
       "company": "Clouthy (clouthy.com)",
       "startDate": "Oct 2024",
-      "endDate": "Present",
-      "description": "Leading development of an online fashion marketplace on WordPress with custom React components. Designed user registration, product catalog, URL-based product requests and cart system. Managed hosting deployment and CI/CD.",
+      "endDate": "Actualidad",
+      "description": "Liderando el desarrollo de un marketplace de moda online en WordPress con componentes personalizados en React. Diseño del sistema de registro, catálogo de productos, peticiones por URL y carrito. Gestión del hosting y CI/CD.",
       "skills": ["WordPress", "PHP", "MySQL", "JavaScript", "Python"],
       "mainLink": "https://clouthy.com"
     }
@@ -52,24 +52,23 @@
     {
       "name": "Clouthy Marketplace",
       "image": "images/logo-clouthy.png",
-      "description": "A WordPress-based fashion marketplace I built as founder and CTO. Users can browse products, request items by URL, select size and quantity, and complete orders. Integrated custom React components for an interactive UX.",
+      "description": "Marketplace de moda desarrollado como fundador y CTO, basado en WordPress. Los usuarios pueden navegar productos, pedir artículos mediante URL, seleccionar talla y cantidad, y completar el pedido. Componentes React personalizados para mejorar la experiencia de usuario.",
       "skills": ["WordPress", "PHP", "MySQL", "JavaScript", "Python"],
       "mainLink": "https://clouthy.com"
     },
     {
       "name": "Mar de Olivos Ceuta",
       "image": "images/logo-mardeolivos.png",
-      "description": "Developed the official website for Mar de Olivos restaurant in Ceuta. Implemented a mobile-first menu presentation with alternating image/description, reservation form and interactive guest messages.",
-      "skills": ["React","HTML", "CSS", "JavaScript", "Responsive Design"],
+      "description": "Desarrollo de la web oficial del restaurante Mar de Olivos en Ceuta. Implementación de menú orientado a móviles con presentación alternada imagen/descripción, formulario de reservas y mensajes interactivos de los comensales.",
+      "skills": ["React", "HTML", "CSS", "JavaScript", "Diseño Responsivo"],
       "mainLink": "https://mardeolivosceuta.es"
     },
     {
-      "name": "INGESA Hospital Inventory System",
+      "name": "Sistema de Inventario Hospitalario INGESA",
       "image": "images/logo-ingesa.png",
-      "description": "Built a web-based inventory management system for INGESA’s hospital assets. Recreated an existing Access database schema in MySQL, developed a RESTful PHP backend running on Apache, and crafted a responsive HTML/CSS/JavaScript front end to allow staff to add, edit, search and report on medical equipment, consumables and software licenses.",
+      "description": "Sistema de gestión de inventario hospitalario desarrollado para INGESA. Migración de una base de datos Access a MySQL, backend RESTful en PHP sobre Apache y frontend responsive con HTML/CSS/JavaScript para añadir, editar, buscar y reportar equipos médicos, consumibles y licencias.",
       "skills": ["PHP", "MySQL", "Apache", "HTML5", "CSS3", "JavaScript", "Bootstrap"],
       "mainLink": "https://github.com/jclm97/ingsesa-inventory-system"
     }
-
   ]
 }
